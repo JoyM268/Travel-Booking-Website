@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/search.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a class="title" href="index.html">Travelr</a>
+        </div>
+        <div class="right-section">
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Destinations</a>
+                <a href="search.html" class="nav-link current">Book Now</a>
+            </nav>
+            <div id="menu-icon" onclick="handleMenu()">
+                <i class=" fas fa-bars" id="menu-open"></i>
+                <i class="fas fa-times hidden" id="menu-close"></i>
+            </div>
+        </div>
+    </header>
+    <div id="side-menu">
+        <a href="index.html">Home</a>
+        <a href="#">Destinations</a>
+        <a href="search.html" class="current">Book Now</a>
+        <a href="#">Deals & Offers</a>
+        <a href="#">Contact Us</a>
+        <hr />
+        <a href="#">Flight Booking</a>
+        <a href="#">Hotel Booking</a>
+        <a href="#">Bus Booking</a>
+        <a href="#">Vacation Packages</a>
+        <hr />
+        <a href="#">Reviews</a>
+        <a href="#">Help Center</a>
+        <hr />
+        <div class="btns">
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+        </div>
+    </div>
+    <main id="main">
+        <section id="page">
+            <form class="search-form">
+                <div>
+                    <h1 class="heading">Book Now</h1>
+                </div>
+                <div class="inputs">
+                    <div class="radio-btns">
+                        <label>
+                            <input type="radio" name="type"> One-way
+                        </label>
+                        <label>
+                            <input type="radio" name="type"> Round-trip
+                        </label>
+                        <label>
+                            <input type="radio" name="type"> Multi-city
+                        </label>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label for="dep">Departure City</label>
+                            <input type="text" id="dep" placeholder="Departure City" class="text-input" />
+                        </div>
+                        <div>
+                            <label for="dest">Destination City</label>
+                            <input type="text" id="dest" placeholder="Destination City" class="text-input" />
+                        </div>
+                        <div>
+                            <label>Departure Date</label>
+                            <input type="date" class="date-input" />
+                        </div>
+                        <div>
+                            <label>Return Date</label>
+                            <input type="date" class="date-input" />
+                        </div>
+                        <div>
+                            <label for="number">No. of Travellers</label>
+                            <input type="text" id="number" placeholder="No. of Travellers" required
+                                class="text-input" />
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Search" />
+                    </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../JS/script.js"></script>
+
+</html>

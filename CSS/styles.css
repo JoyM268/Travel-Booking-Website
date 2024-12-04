@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Anek Devanagari", sans-serif;
+	user-select: none;
+	color: #eeeeee;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #393e46;
+}
+
+header {
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #222831;
+	color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px;
+	z-index: 10;
+	box-shadow: 0 1px 5px rgba(238, 238, 238, 0.4);
+}
+
+.left-section .title {
+	font-size: 30px;
+	font-weight: 600;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.right-section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.nav-links {
+	display: flex;
+	gap: 15px;
+	font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 4px;
+}
+
+.nav-links a:hover {
+	background-color: #00747a;
+}
+
+#menu-icon {
+	border-radius: 100%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+}
+
+@keyframes rotate-clock {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes rotate-anticlock {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+.rotate-clock {
+	animation: rotate-clock 0.5s ease-in-out forwards;
+}
+
+.rotate-anticlock {
+	animation: rotate-anticlock 0.5s ease-in-out forwards;
+}
+
+#menu-icon:hover {
+	background-color: #00747a;
+}
+
+i {
+	font-size: 20px;
+}
+
+i.hidden {
+	display: none;
+}
+
+#side-menu {
+	position: fixed;
+	right: 0;
+	top: 70px;
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 70px);
+	width: 350px;
+	background-color: #222831;
+	transform: translateX(100%);
+	z-index: 100;
+}
+
+.slide-in {
+	animation: slide-in 0.5s ease-in-out forwards;
+}
+
+.slide-out {
+	animation: slide-out 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-out {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+#side-menu a {
+	padding: 12px;
+	font-size: x-large;
+	cursor: pointer;
+	width: 100%;
+	z-index: 200;
+	transition: all 0.1s ease-in;
+}
+
+#side-menu a:hover {
+	background-color: #00747a;
+}
+
+.current {
+	cursor: not-allowed;
+	background-color: #07e9f562;
+}
+
+#side-menu a.current:hover {
+	background-color: #07e9f562;
+	cursor: not-allowed;
+}
+
+.btns {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.btn {
+	background-color: #00747a;
+	cursor: pointer;
+	border: 1px solid #eeeeee;
+	height: 50px;
+	width: 100px;
+	border-radius: 20px;
+	font-size: large;
+	font-weight: 600;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	scale: 1.08;
+	background-color: #06959f;
+}
+
+#page {
+	height: 100vh;
+	padding: 20px;
+	background-image: url("../assets/hero_image.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.search {
+	position: relative;
+	z-index: 1;
+}
+
+.search input {
+	height: 50px;
+	width: 600px;
+	border-radius: 30px;
+	padding: 7px 19px;
+	color: #222831;
+	font-size: large;
+	outline: none;
+	border: 3px solid #222831;
+	box-shadow: 6px 3px 30px #09b0fd;
+}
+
+.search button {
+	position: absolute;
+	right: 0;
+	top: 3px;
+	height: 44px;
+	width: 70px;
+	border-radius: 30px;
+	outline: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 3px solid #222831;
+	background-color: #00747a;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.search button:hover {
+	background-color: #00696e;
+}
+
+.phrase {
+	margin-top: -280px;
+	color: #ffffff;
+	font-size: 5rem;
+	font-weight: bold;
+	text-shadow: 9px 6px 50px #09b0fd;
+	text-align: center;
+	line-height: 100px;
+}
+
+.watermark {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: #222831;
+	padding: 6px;
+}
+
+@media (max-width: 800px) {
+	.nav-links {
+		display: none;
+	}
+
+	.search input {
+		max-width: 300px;
+	}
+}
