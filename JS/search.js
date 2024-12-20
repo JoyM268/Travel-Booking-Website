@@ -44,6 +44,14 @@ form.addEventListener("submit", function (e) {
 			price: "$700",
 			availableSeats: 40,
 		},
+		{
+			id: 4,
+			depCity: "Los Angeles",
+			destCity: "Paris",
+			date: "2024-12-20",
+			price: "$600",
+			availableSeats: 20,
+		},
 	];
 
 	const filteredTrips = trips.filter(
