@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/sidemenu.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a class="title" href="index.html">Travelr</a>
+        </div>
+        <div class="right-section">
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Destinations</a>
+                <a href="search.html">Book Now</a>
+            </nav>
+            <div id="menu-icon" onclick="handleMenu()">
+                <i class=" fas fa-bars" id="menu-open"></i>
+                <i class="fas fa-times hidden" id="menu-close"></i>
+            </div>
+        </div>
+    </header>
+    <div id="side-menu">
+        <a href="index.html">Home</a>
+        <a href="#">Destinations</a>
+        <a href="search.html">Book Now</a>
+        <a href="#">Deals & Offers</a>
+        <a href="#">Contact Us</a>
+        <hr />
+        <a href="#">Flight Booking</a>
+        <a href="#">Hotel Booking</a>
+        <a href="#">Bus Booking</a>
+        <hr />
+        <a href="profile.html">Profile Page</a>
+        <a href="#">Reviews</a>
+        <a href="#">Help Center</a>
+        <hr />
+        <div class="btns">
+            <button class="btn"> <a href="login.html">Login</a></button>
+            <button class="btn"><a href="signup.html">Sign Up</a></button>
+        </div>
+    </div>
+    <main id="main">
+        <section id="page">
+            <form class="login-form">
+                <div>
+                    <h1 class="heading">Signup</h1>
+                </div>
+                <div class="inputs">
+                    <div class="input">
+                        <div>
+                            <label for="name">Email</label>
+                            <input type="text" id="name" placeholder="Email" class="text-input" />
+                        </div>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" placeholder="Password" class="text-input" />
+                        </div>
+                        <div>
+                            <label for="cpass">Confirm Password</label>
+                            <input type="password" id="cpass" placeholder="Confirm Password" class="text-input" />
+                        </div>
+                        <span id="error"></span>
+                        <div class="submit">
+                            <input type="submit" value="Signup" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../JS/script.js"></script>
+<script src="../JS/signup.js"></script>
+
+</html>

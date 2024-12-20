@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - TravelNest</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/sidemenu.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a class="title" href="index.html">Travelr</a>
+        </div>
+        <div class="right-section">
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="search.html" class="nav-link">Book Now</a>
+            </nav>
+            <div id="menu-icon" onclick="handleMenu()">
+                <i class="fas fa-bars" id="menu-open"></i>
+                <i class="fas fa-times hidden" id="menu-close"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="side-menu">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="search.html">Book Now</a>
+        <a href="#">Deals & Offers</a>
+        <a href="#">Contact Us</a>
+        <hr />
+        <a href="#">Flight Booking</a>
+        <a href="#">Hotel Booking</a>
+        <a href="#">Bus Booking</a>
+        <hr />
+        <a href="profile.html" class="current">Profile Page</a>
+        <a href="#">Reviews</a>
+        <a href="#">Help Center</a>
+        <hr />
+        <div class="btns">
+            <button class="btn"> <a href="login.html">Login</a></button>
+            <button class="btn"><a href="signup.html">Sign Up</a></button>
+        </div>
+    </div>
+
+    <main>
+        <section id="profile-page">
+            <div class="profile-container">
+                <h1>Your Profile</h1>
+                <div class="profile-info">
+                    <div class="profile-item">
+                        <label for="name">Full Name</label>
+                        <p id="name">Joy Mascarenhas</p>
+                    </div>
+                    <div class="profile-item">
+                        <label for="phone">Phone Number</label>
+                        <p id="phone">1234567890</p>
+                    </div>
+                    <div class="profile-item">
+                        <label for="email">Email</label>
+                        <p id="email">joy@gmail.com</p>
+                    </div>
+                </div>
+                <button class="update-btn" onclick="updateProfile()">Update Profile</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/script.js"></script>
+</body>
+<script>
+    function updateProfile() {
+        location.href = "./profileUpdate.html"
+    }
+</script>
+
+</html>

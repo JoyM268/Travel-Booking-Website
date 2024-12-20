@@ -1,0 +1,77 @@
+section {
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url("../assets/profile.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+section h1 {
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+	font-size: xx-large;
+}
+
+.profile-form {
+	display: flex;
+	flex-direction: column;
+	background-color: #2228316a;
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	padding: 20px;
+	width: 400px;
+	box-shadow: 2px 4px 8px #eeeeee85;
+}
+
+.profile-form div {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.profile-form label {
+	font-size: large;
+	color: #eeeeee;
+}
+
+.profile-form input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #222831;
+	background-color: #eeeeee;
+	color: #222831;
+	font-size: large;
+}
+
+.profile-form button {
+	background-color: #00747a;
+	color: #eeeeee;
+	cursor: pointer;
+	border: none;
+	height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	border-radius: 25px;
+}
+
+.profile-form button:hover {
+	background-color: #06959f;
+	transform: scale(1.02);
+}
+
+#error {
+	color: red;
+	font-size: large;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.profile-form {
+		width: 90%;
+	}
+}

@@ -7,6 +7,8 @@
     <title>Book Now</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/search.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/sidemenu.css">
 
 </head>
 
@@ -30,26 +32,26 @@
     <div id="side-menu">
         <a href="index.html">Home</a>
         <a href="#">Destinations</a>
-        <a href="search.html" class="current">Book Now</a>
+        <a href="search.html">Book Now</a>
         <a href="#">Deals & Offers</a>
         <a href="#">Contact Us</a>
         <hr />
         <a href="#">Flight Booking</a>
         <a href="#">Hotel Booking</a>
         <a href="#">Bus Booking</a>
-        <a href="#">Vacation Packages</a>
         <hr />
+        <a href="profile.html">Profile Page</a>
         <a href="#">Reviews</a>
         <a href="#">Help Center</a>
         <hr />
         <div class="btns">
-            <button class="btn">Login</button>
-            <button class="btn">Sign Up</button>
+            <button class="btn"><a href="login.html">Login</a></button>
+            <button class="btn"><a href="signup.html">Sign Up</a></button>
         </div>
     </div>
     <main id="main">
         <section id="page">
-            <form class="search-form">
+            <form class="search-form hidden">
                 <div>
                     <h1 class="heading">Book Now</h1>
                 </div>
@@ -91,8 +93,10 @@
                     <div class="submit">
                         <input type="submit" value="Search" />
                     </div>
-
             </form>
+            <div class="search-form">
+                dksj
+            </div>
         </section>
     </main>
 
@@ -101,5 +105,6 @@
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../JS/script.js"></script>
+<script src="../JS/search.js"></script>
 
 </html>

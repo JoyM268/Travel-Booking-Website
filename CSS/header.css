@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Anek Devanagari", sans-serif;
+	user-select: none;
+	color: #eeeeee;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #393e46;
+}
+
+header {
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #222831;
+	color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px;
+	z-index: 10;
+	box-shadow: 0 1px 5px rgba(238, 238, 238, 0.4);
+}
+
+.left-section .title {
+	font-size: 30px;
+	font-weight: 600;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.right-section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.nav-links {
+	display: flex;
+	gap: 15px;
+	font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 4px;
+}
+
+.nav-links a:hover {
+	background-color: #00747a;
+}
+
+#menu-icon {
+	border-radius: 100%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+}
+
+@keyframes rotate-clock {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes rotate-anticlock {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+
+.rotate-clock {
+	animation: rotate-clock 0.5s ease-in-out forwards;
+}
+
+.rotate-anticlock {
+	animation: rotate-anticlock 0.5s ease-in-out forwards;
+}
+
+#menu-icon:hover {
+	background-color: #00747a;
+}
+
+i {
+	font-size: 20px;
+}
+
+i.hidden {
+	display: none;
+}
