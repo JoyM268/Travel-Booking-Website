@@ -147,3 +147,80 @@ label {
 .hidden {
 	display: none;
 }
+
+.show {
+	display: flex;
+}
+
+.output-container {
+	width: 100%;
+	min-height: 80%;
+	flex-direction: column;
+	align-items: center;
+	background-color: #2228316a;
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid #eeeeee;
+	box-shadow: 2px 4px 8px #eeeeee85;
+	color: #eeeeee;
+	font-size: x-large;
+}
+
+.output {
+	width: 100%;
+	text-align: center;
+	height: 100%;
+}
+
+.output h2 {
+	padding-top: 30px;
+	border: none;
+	width: 100%;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+	border-bottom: #eeeeee;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+#trip-list {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	padding: 5px;
+	display: flex;
+	justify-items: center;
+}
+
+#trip-list li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-decoration: none;
+	width: 100%;
+	margin: 10px;
+	background-color: #0a5f62;
+	border-radius: 20px;
+}
+
+#trip-list li div {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	padding: 20px;
+}
+
+#trip-list li div button {
+	height: 50px;
+	width: 150px;
+	border-radius: 25px;
+	outline: none;
+	border: 1px solid #eeeeee;
+	background-color: #044246;
+	cursor: pointer;
+}
+
+#trip-list li div button:hover {
+	scale: 1.04;
+	opacity: 0.8;
+}

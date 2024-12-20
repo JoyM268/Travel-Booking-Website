@@ -32,7 +32,7 @@
     <div id="side-menu">
         <a href="index.html">Home</a>
         <a href="#">Destinations</a>
-        <a href="search.html">Book Now</a>
+        <a href="search.html" class="current">Book Now</a>
         <a href="#">Deals & Offers</a>
         <a href="#">Contact Us</a>
         <hr />
@@ -51,7 +51,7 @@
     </div>
     <main id="main">
         <section id="page">
-            <form class="search-form hidden">
+            <form class="search-form show" id="search-form">
                 <div>
                     <h1 class="heading">Book Now</h1>
                 </div>
@@ -86,17 +86,22 @@
                         </div>
                         <div>
                             <label for="number">No. of Travellers</label>
-                            <input type="text" id="number" placeholder="No. of Travellers" required
-                                class="text-input" />
+                            <input type="text" id="number" placeholder="No. of Travellers" class="text-input" />
                         </div>
                     </div>
                     <div class="submit">
                         <input type="submit" value="Search" />
                     </div>
+                </div>
             </form>
-            <div class="search-form">
-                dksj
+            <div class="output-container hidden">
+                <div class="output">
+                    <h2>Available Trips</h2>
+                    <ul id="trip-list">
+                    </ul>
+                </div>
             </div>
+
         </section>
     </main>
 
